@@ -17,8 +17,7 @@
 
     <!-- Chart.js for Analytics Charts -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- This is not on github(private)-->
-    <script src="firebase-config.js"></script>
+    
 
     <style>
         /* Custom font and smooth scrolling */
@@ -103,7 +102,16 @@
 
         // --- Firebase Configuration (Your details are included) ---
         // hidden, firebaseconfig object
-
+        const firebaseConfig = {
+                        apiKey: "AIzaSyC2t0JXmZaM800u4-mJ8XqBgLVEbmxalb4",
+                        authDomain: "work-like-hell.firebaseapp.com",
+                        projectId: "work-like-hell",
+                        storageBucket: "work-like-hell.appspot.com",
+                        messagingSenderId: "363718382171",
+                        appId: "1:363718382171:web:ac21986cb1a7e5738ca57e",
+                        measurementId: "G-QGNN06GXNB"
+                    };
+        
         // --- Initialize Firebase ---
         let app, auth, db;
         let firebaseInitializationError = null;
